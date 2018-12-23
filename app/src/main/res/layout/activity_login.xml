@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/logindong">
+
+    <TextClock
+        android:id="@+id/clock"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="30px"
+        android:drawableLeft="@mipmap/user"
+        android:drawablePadding="20px"
+        android:hint="请输入用户名!" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="30px"
+        android:drawableLeft="@mipmap/pwd"
+        android:drawablePadding="20px"
+        android:hint="请输入密码!"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_margin="30px"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/login"
+            android:layout_margin="30px"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"/>
+        <Button
+            android:id="@+id/zhuce"
+            android:layout_margin="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>
